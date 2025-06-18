@@ -167,17 +167,18 @@ export default defineUserConfig({
      * 评论 comments
      * @see https://theme-plume.vuejs.press/guide/features/comments/
      */
-    // comment: {
-    //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-    //   comment: true,
-    //   repo: '',
-    //   repoId: '',
-    //   category: '',
-    //   categoryId: '',
-    //   mapping: 'pathname',
-    //   reactionsEnabled: true,
-    //   inputPosition: 'top',
-    // },
+    comment: {
+      provider: 'Waline', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+      comment: true,
+      serverURL: 'https://blog-api-eta-sandy.vercel.app/',
+      // repo: '',
+      // repoId: '',
+      // category: '',
+      // categoryId: '',
+      // mapping: 'pathname',
+      // reactionsEnabled: true,
+      // inputPosition: 'top',
+    },
 
     /**
      * 资源链接替换
