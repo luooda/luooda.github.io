@@ -46,18 +46,15 @@ export default defineUserConfig({
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
     // hostname: 'https://your_site_url',
-
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',
     // docsDir: 'docs',
     // docsBranch: '',
-
     /* 页内信息 */
     // editLink: true,
     // lastUpdated: true,
     // contributors: true,
     // changelog: false,
-
     /**
      * 博客
      * @see https://theme-plume.vuejs.press/config/basic/#blog
@@ -180,10 +177,10 @@ export default defineUserConfig({
       comment: true,
       serverURL: 'https://blog-api-eta-sandy.vercel.app/',
       pageview: true,
-      // repo: '',
-      // repoId: '',
-      // category: '',
-      // categoryId: '',
+      // repo: 'luooda/luooda.github.io',
+      // repoId: 'R_kgDOO-Abmg',
+      // category: 'Announcements',
+      // categoryId: 'DIC_kwDOO-Abms4CruQW',
       // mapping: 'pathname',
       // reactionsEnabled: true,
       // inputPosition: 'top',
