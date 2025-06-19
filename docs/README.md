@@ -7,9 +7,9 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: luooda blog
-      tagline: VuePress Next Theme
-      text: 一个简约的，功能丰富的 vuepress 文档&博客 主题
+      name: luooda's blog
+      # tagline: VuePress Next Theme
+      text: 分享技术，记录生活
       actions:
         -
           theme: brand

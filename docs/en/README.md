@@ -8,8 +8,8 @@ config:
     background: tint-plate
     hero:
       name: Theme Plume
-      tagline: VuePress Next Theme
-      text: A simple, feature-rich, document & blog
+      # tagline: VuePress Next Theme
+      text: Share technology, record life
       actions:
         -
           theme: brand
@@ -18,5 +18,5 @@ config:
         -
           theme: alt
           text: Github →
-          link: https://github.com/pengzhanbo/vuepress-theme-plume
+          link: https://github.com/luooda
 ---

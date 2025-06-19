@@ -27,5 +27,6 @@ export const enNavbar = defineNavbarConfig([
     text: 'Notes',
     items: [{ text: 'Demo', link: '/en/notes/demo/README.md' }]
   },
+  
 ])
 

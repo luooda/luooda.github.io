@@ -12,22 +12,28 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
+import { baiduAnalyticsPlugin } from '@vuepress/plugin-baidu-analytics'
 
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
   locales: {
     '/': {
-      title: 'My Vuepress Site',
+      title: 'luooda\'s blog',
       lang: 'zh-CN',
       description: '分享技术，记录生活',
     },
     '/en/': {
-      title: 'My Vuepress Site',
+      title: 'luooda\'s blog',
       lang: 'en-US',
       description: '分享技术，记录生活',
     },
   },
+  plugins: [
+    baiduAnalyticsPlugin({
+      id: 'a62cfc845e9631d6651b73006e764fd6' // 请替换为你的百度统计ID
+    })
+  ],
 
   head: [
     // 配置站点图标
@@ -112,7 +118,9 @@ export default defineUserConfig({
 
     /* 文章字数统计、阅读时间，设置为 false 则禁用 */
     // readingTime: true,
-
+    readingTime: {
+      wordPerMinute: 300
+    },
     /**
       * markdown
       * @see https://theme-plume.vuejs.press/config/markdown/
@@ -171,6 +179,7 @@ export default defineUserConfig({
       provider: 'Waline', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
       comment: true,
       serverURL: 'https://blog-api-eta-sandy.vercel.app/',
+      pageview: true,
       // repo: '',
       // repoId: '',
       // category: '',
