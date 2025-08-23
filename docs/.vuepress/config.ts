@@ -173,17 +173,17 @@ export default defineUserConfig({
      * @see https://theme-plume.vuejs.press/guide/features/comments/
      */
     comment: {
-      provider: 'Waline', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+      provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
       comment: true,
-      serverURL: 'https://blog-api-eta-sandy.vercel.app/',
-      pageview: true,
-      // repo: 'luooda/luooda.github.io',
-      // repoId: 'R_kgDOO-Abmg',
-      // category: 'Announcements',
-      // categoryId: 'DIC_kwDOO-Abms4CruQW',
-      // mapping: 'pathname',
-      // reactionsEnabled: true,
-      // inputPosition: 'top',
+      // serverURL: 'https://blog-api-eta-sandy.vercel.app/',
+      // pageview: true,
+      repo: 'luooda/luooda.github.io',
+      repoId: 'R_kgDOO-Abmg',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOO-Abms4CruQW',
+      mapping: 'pathname',
+      reactionsEnabled: true,
+      inputPosition: 'top',
     },
 
     /**
