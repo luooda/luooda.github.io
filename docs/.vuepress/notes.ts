@@ -35,6 +35,12 @@ const zhDemoNote = defineNoteConfig({
   // sidebar: 'auto',
 })
 
+const designPatternNote = defineNoteConfig({
+  dir: 'design_pattern',
+  link: '/design_pattern/',
+  sidebar: 'auto',
+})
+
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
@@ -61,7 +67,7 @@ const zhPreviewNote = defineNoteConfig({
 export const zhNotes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [zhDemoNote, myNewBlogNote, zhFrontendTechNote, zhPreviewNote],
+  notes: [zhDemoNote, myNewBlogNote, zhFrontendTechNote, zhPreviewNote, designPatternNote],
 })
 
 /* =================== locale: en-US =================== */

@@ -7,15 +7,21 @@
 import { defineNavbarConfig } from 'vuepress-theme-plume'
 
 export const zhNavbar = defineNavbarConfig([
-  { text: '首页', link: '/' },
-  { text: '博客', link: '/blog/' },
-  { text: '标签', link: '/blog/tags/' },
-  { text: '归档', link: '/blog/archives/' },
+  { text: '首页', link: '/', icon: 'mdi:home' },
+  { text: '博客', link: '/blog/' ,icon: 'mdi:book-open-page-variant'},
+  { text: '标签', link: '/blog/tags/' ,icon: 'mdi:tag'},
+  { text: '归档', link: '/blog/archives/', icon: 'mdi:archive'},
+  {text: '项目', link: '/project/', icon: 'mdi:folder'},
+  {text: '生活', link: '/life/', icon: 'mdi:emoticon'},
+  {text: '阅读', link: '/read/', icon: 'mdi:book'},
   {
     text: '笔记',
-    items: [{ text: '示例', link: '/notes/demo/README.md' }]
+    items: [{ text: '示例', link: '/notes/demo/README.md' },
+      { text: '设计模式', link: '/notes/design_pattern/README.md' },
+    ],
+    icon: 'mdi:file-document'
   },
-{ text: '关于我', link: '/about/' }
+  { text: '关于我', link: '/about/', icon: 'mdi:account'}
 ])
 
 export const enNavbar = defineNavbarConfig([

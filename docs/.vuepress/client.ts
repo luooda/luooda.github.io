@@ -3,7 +3,7 @@ import { defineClientConfig } from 'vuepress/client'
 // import NpmBadge from 'vuepress-theme-plume/features/NpmBadge.vue'
 // import NpmBadgeGroup from 'vuepress-theme-plume/features/NpmBadgeGroup.vue'
 // import Swiper from 'vuepress-theme-plume/features/Swiper.vue'
-
+import CustomHomeLayout from './theme/layouts/CustomHome.vue'
 // import CustomComponent from './theme/components/Custom.vue'
 
 // import './theme/styles/custom.css'
@@ -15,7 +15,7 @@ export default defineClientConfig({
     // app.component('NpmBadge', NpmBadge)
     // app.component('NpmBadgeGroup', NpmBadgeGroup)
     // app.component('Swiper', Swiper) // you should install `swiper`
-
+    app.component('CustomHomeLayout', CustomHomeLayout)
     // your custom components
     // app.component('CustomComponent', CustomComponent)
   },

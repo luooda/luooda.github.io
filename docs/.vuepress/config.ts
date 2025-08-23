@@ -23,11 +23,11 @@ export default defineUserConfig({
       lang: 'zh-CN',
       description: '分享技术，记录生活',
     },
-    '/en/': {
-      title: 'luooda\'s blog',
-      lang: 'en-US',
-      description: '分享技术，记录生活',
-    },
+    // '/en/': {
+    //   title: 'luooda\'s blog',
+    //   lang: 'en-US',
+    //   description: '分享技术，记录生活',
+    // },
   },
   plugins: [
     baiduAnalyticsPlugin({
